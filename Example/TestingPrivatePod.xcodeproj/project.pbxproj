@@ -8,18 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		23AE8AEEF09085FD73E876EA /* Pods_TestingPrivatePod_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E6A07D19A1B1E072DF0B7DD /* Pods_TestingPrivatePod_Tests.framework */; };
+		599C6F7925FF715100108079 /* DebugPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599C6F7825FF715000108079 /* DebugPrint.swift */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		599C6F7825FF715000108079 /* DebugPrint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugPrint.swift; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* TestingPrivatePod_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestingPrivatePod_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		74613C7C3C4B1F05F3907965 /* Pods-TestingPrivatePod_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestingPrivatePod_Tests.debug.xcconfig"; path = "Target Support Files/Pods-TestingPrivatePod_Tests/Pods-TestingPrivatePod_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7E6A07D19A1B1E072DF0B7DD /* Pods_TestingPrivatePod_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestingPrivatePod_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		83896944EEFC1CC958E4D596 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		99EECEAFE4237EF1748B7042 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		C0A16091F2AEFA1DEF2F73BD /* TestingPrivatePod.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = TestingPrivatePod.podspec; path = ../TestingPrivatePod.podspec; sourceTree = "<group>"; };
+		83896944EEFC1CC958E4D596 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		99EECEAFE4237EF1748B7042 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C0A16091F2AEFA1DEF2F73BD /* TestingPrivatePod.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TestingPrivatePod.podspec; path = ../TestingPrivatePod.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FA5825B286B085015614C230 /* Pods-TestingPrivatePod_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestingPrivatePod_Tests.release.xcconfig"; path = "Target Support Files/Pods-TestingPrivatePod_Tests/Pods-TestingPrivatePod_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -35,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		599C6F7725FF713200108079 /* TestingPrivatePod */ = {
+			isa = PBXGroup;
+			children = (
+				599C6F7825FF715000108079 /* DebugPrint.swift */,
+			);
+			path = TestingPrivatePod;
+			sourceTree = "<group>";
+		};
 		5EB682C0675451ACE022064D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -46,6 +56,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				599C6F7725FF713200108079 /* TestingPrivatePod */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
@@ -95,7 +106,6 @@
 				74613C7C3C4B1F05F3907965 /* Pods-TestingPrivatePod_Tests.debug.xcconfig */,
 				FA5825B286B085015614C230 /* Pods-TestingPrivatePod_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -131,10 +141,6 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					607FACCF1AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
@@ -147,6 +153,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -219,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				599C6F7925FF715100108079 /* DebugPrint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
